@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faThLarge, faFlag, faRedo, faBoxes, faLeaf,
     faDollarSign, faPalette, faExpandArrowsAlt, faAngleRight, faImage, faShoppingBag, faBars,
-    faCreditCard, faUsers, faFire, faTag, faBullhorn, faChevronRight, faCalendarDay, faStar, faPhone, faSnowflake, faSignOutAlt
+    faCreditCard, faUsers, faFire, faTag, faBullhorn, faChevronRight, faCalendarDay, faStar, faPhone, faSnowflake, faSignOutAlt, faDotCircle
 } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 
