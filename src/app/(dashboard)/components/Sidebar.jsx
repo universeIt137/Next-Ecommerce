@@ -22,7 +22,7 @@ const Sidebar = () => {
             icon: faFlag,
             link: '',
             dropdownItems: [
-                { name: 'Website Info List', link: '/website-info/list' },
+                { name: 'Website Info List', link: '/dashboard/infoList' },
                 { name: 'Add Website Info', link: '/website-info/add' }
             ]
         },
