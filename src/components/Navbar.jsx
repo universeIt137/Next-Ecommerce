@@ -1,10 +1,16 @@
+"use client"
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import React from 'react';
 import { FaRegCircleUser, FaUser } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
 import { LuShoppingCart } from "react-icons/lu";
 
 const Navbar = () => {
+    const pathName = usePathname();
+    if (pathName.includes('dashboard')) {
+        return <></>
+    }
     return (
         <div className="bg-base-100 shadow-lg">
             <div className="navbar justify-between  container mx-auto md:px-10 px-3 ">
@@ -135,7 +141,9 @@ const Navbar = () => {
                             <div className="tooltip tooltip-bottom">
                                 <FaRegCircleUser />
                             </div>
-                            <button className="btn bg-black text-white">Logout</button>
+                            <Link href={"/register"}>
+                                <button className="btn bg-black text-white">Register</button>
+                            </Link>
                         </div>
 
 
