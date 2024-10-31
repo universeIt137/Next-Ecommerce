@@ -1,5 +1,6 @@
 "use client"
 import useAxiosPublic from '@/hooks/useAxiosPublic';
+import { getApi } from '@/hooks/useFetchData';
 import Image from 'next/image';
 import React from 'react';
 import { FaEye, FaEdit, FaTrash } from "react-icons/fa";
@@ -17,13 +18,9 @@ const data = [
 
 
 const page = async () => {
-    const axiosPublic = useAxiosPublic();
-    const getData = async () => {
-        const res = await fetch('https://e-commerce-server-rosy.vercel.app/api/v1/web-info');
-        const data = await res.json();
-        return data.data;
-    }
-    const data = await getData();
+    
+    const data = await getApi('/web-info');
+    console.log(data);
     return (
         <div className="overflow-x-auto">
             <table className="min-w-full bg-white border border-gray-300 rounded-lg">
